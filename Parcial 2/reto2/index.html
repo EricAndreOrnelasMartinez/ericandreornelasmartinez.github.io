@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo de Animación CSS</title>
+	<style type="text/css">
+        body{
+            display: flex;
+        }
+		#img1 {
+			width: 100px;
+			height: 100px;
+			position: relative;
+			animation: girar 2s infinite linear;
+		}
+
+		@keyframes girar {
+			from {
+				transform: rotate(0deg);
+			}
+			to {
+				transform: rotate(360deg);
+			}
+		}
+        #img2{
+            width: 100px;
+            height: 100px;
+            position: relative;
+            animation: mover 4s infinite linear;
+        }
+        @keyframes mover{
+            0%{margin-top: 0px; margin-right: 0px;}
+            25%{margin-top: 400px; margin-right: 400px;}
+        }
+        #img3{
+            width: 100px;
+            height: 100px;
+            position: relative;
+            animation: mover2 4s infinite linear;
+        }   
+        @keyframes mover2{
+             0%{margin-top: 0px; margin-right: 0px;}
+            25%{margin-top: 400px; margin-right: 400px;}    
+        }
+        #img4{
+            width: 100px;
+            height: 100px;
+            position: relative;
+            animation: girar 4s infinite linear;
+        }
+	</style>
+</head>
+<body>
+    
+    <img src="./com.jpg" alt=""  id="img1"> 
+    <img src="./computadora.jfif" alt="" id="img2"> 
+    <img src="./terminal.jfif" alt="" id="img3"> 
+    <img src="./imagen.png" alt="" id="img4">
+    
+</body>
+</html>

@@ -1,0 +1,11 @@
+body{
+    background-image: url(../img/Portada.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+img{
+    width: 20%;
+}
+h1, h2, h3{
+    color: white;
+}

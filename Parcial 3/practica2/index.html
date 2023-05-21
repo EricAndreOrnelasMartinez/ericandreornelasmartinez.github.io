@@ -1,0 +1,170 @@
+EJERCICIO 1:
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script type="text/javascript">
+document.write("Hola Mundo")
+</script>
+<script type="text/javascript">
+alert("Bienvenidos")
+</script>
+</body>
+</html>
+
+EJERCICIO 2:
+<html>
+<body>
+<script type="text/javascript">
+for (i = 6; i >= 1; i--){
+document.write("<h" + i + ">Cabecera de nivel " + i)
+document.write("</h" + i + ">")
+}
+</script>
+</body>
+</html>
+
+
+EJERCICIO 3:
+<html>
+<head>
+</head>
+ 
+<body>
+<p> Uso de variables en javascript Funcion prompt</p>
+<script type="text/javascript">
+var num1 = parseInt(prompt("Introduce un nÃºmero 1"));  //pasar el numero introducido a entero
+var num2 = parseInt(prompt("Introduce un nÃºmero 2"));  //pasar el numero introducido a entero
+var op = parseInt(prompt("Introduce la operacion 1.- suma, 2.- resta, 3.-multiplicacion, 4.- Division")); //pasar el numero introducido a entero
+var r=0;
+alert("Los datos introducidos son");
+alert(num1);
+alert(num2);
+alert(op);
+if(op==1)
+{
+  var r=num1+num2;
+  alert("la operacion seleccionada es una suma");
+}
+if(op==2)
+{	
+  var r=num1-num2;
+  alert("la operacion seleccionada es una resta");
+}
+if(op==3)
+{ 
+  var r=num1*num2;
+  alert("la operacion seleccionada es una -multiplicacion");
+ }
+if(op==4)
+{
+  var r=num1/num2;
+  alert("la operacion seleccionada es una Division");
+}
+
+alert("El resultado de la operaciÃ³n es \n"+r);
+</script>
+</body>
+</html>
+
+
+EJERCICIO 4:
+<html>
+<head>
+<script type="text/javascript">
+var numero = prompt("Introduce un nÃºmero y se mostrarÃ¡ su factorial");
+var resultado = 1;
+ 
+for(var i=1; i<=numero; i++) {
+  resultado *= i;
+}
+alert(resultado);
+</script>
+</head>
+ 
+<body>
+</body>
+</html> -->
+
+ EJERCICIO 5:
+<html>
+<head>
+<script type="text/javascript">
+function myfunction(txt, txt2, txt3){
+alert(txt, txt2,  txt3)
+}
+</script>
+</head>
+<body>
+<form name="form1">
+<input name="entrada">
+<input name="entrada1">
+<input name="entrada2">
+<input name="entrada3">
+<input type="button" onclick="myfunction(form1.entrada.value + form1.entrada1.value + form1.entrada2.value)"value="Call function">
+ <input type="button" onclick="myfunction(form1.entrada1.value)"value="Call function">
+<input type="button" onclick="myfunction(form1.entrada2.value)"value="Call function">
+<input type="button" onclick="myfunction(form1.entrada3.value)"value="Call function"> 
+</form>
+<p>By pressing the button, a function with an argument will be called.
+The function will alert this argument.
+</p>
+</body>
+</html>  
+
+EJERCICIO 6
+<html>
+<head>
+<script type="text/javascript">
+function validate(){
+x=document.myForm
+txt=x.myInput.value
+if (txt>=1 && txt<=5){
+return true
+} else {
+if (txt < 1) alert("Es menor que 1, debe estar entre 1 y 5")
+else if (txt > 1) alert("Es mayor que 5, debe estar entre 1 y 5")
+else alert("No es vÃ¡lido, debe estar entre 1 y 5")
+return false
+}
+}
+</script>
+</head>
+<body>
+<form name="myForm" action="#" onSubmit="return validate()">
+Enter a value from 1 to 5: <input type="text" name="myInput">
+<input type="submit" value="Send input">
+</form>
+</body>
+</html>
+
+
+EJERCICIO 7:
+<html>
+<head>
+    <title>Bienvenida del usuario</title>
+    <script type = "text/javascript">
+    function alertName() {
+        var name = document.forms[0].nametext.value;
+        if (name == "lily") {
+            alert("Hola Lily.  Bienvenido a la pÃ¡gina eres el revisor");
+        }
+        else if (name == "guest") {
+            alert("Hola visitante, solo tendrÃ¡s acceso a ciertas pÃ¡ginas");
+        }
+        else {
+            alert("Hola " + name + "tu no tienes acceso.");
+        }
+        return true;
+    }  
+        
+    </script>
+</head>
+<body>
+<form id="myform" action="#" onsubmit="return alertName();">
+<p>Username: <input id="nametext" name="username" type="text" /></p>
+<p><input type="submit" /></p>
+</form>
+</body>
+</html>

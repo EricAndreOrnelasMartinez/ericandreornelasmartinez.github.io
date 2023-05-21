@@ -1,0 +1,16 @@
+Cuáles son las características de diseño de la página? 
+-El diseño es resposivo, y por lo tanto se adapta a las resoluciones de la ventana.
+
+en que momento es una columna? en que momento son dos? y en que momento son tres?
+-Tiene 3 tamños programados, y según cada tamaño se muestran las columnas respectivas.
+
+Esta página se verifica tanto en computadora como en móviles?
+-Si, ya que tiene configuración para la menor resolución de pantalla.
+
+Esta página posee un diseño adaptable ?
+-Si, ya que en cada resolución cambia el diseño.
+
+Las siguientes aseveraciones son verdaderas o falsas?
+1.- falsa
+2.- verdadera
+3.- verdadera

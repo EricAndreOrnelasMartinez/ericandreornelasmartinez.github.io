@@ -1,0 +1,23 @@
+body{
+    background-color: green;
+}
+h1{
+    color: black;
+    font-size:25px;
+}
+.c1{
+    color: white;
+    font-style: italic;
+}
+.c2{
+    color: rgb(198, 198, 60);
+    font-family: 'Times New Roman', Times, serif;
+}
+.c3{
+    color: yellow;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.c4{
+    color: red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

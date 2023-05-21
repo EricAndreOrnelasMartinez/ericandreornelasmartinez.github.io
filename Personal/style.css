@@ -1,0 +1,9 @@
+form{
+    width: 30%;
+}
+form input{
+    width: 30%;
+}
+table , tr, td{
+    border: solid 1px black;
+}

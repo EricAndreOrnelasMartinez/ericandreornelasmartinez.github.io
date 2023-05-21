@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablero</title>
+    <style>
+        td{
+            border: 1px solid black;
+        }
+        tr{
+            border: 1pc solid black;
+        }
+        table{
+            width: 20%;
+        }
+        .color{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <table id="tb1"></table>
+    <script>
+        let tb = document.getElementById('tb1')
+        let filas = parseInt(prompt("Digite el número de filas"))
+        let cols = parseInt(prompt("Digite el número de columnas"))
+        let casillas = parseInt(prompt("Digite el número de casillas"))
+        let p1 = [parseInt(Math.random() * filas), parseInt(Math.random() * cols)]
+        let p2
+        let p3
+        do{
+            p2 = [parseInt(Math.random() * filas), parseInt(Math.random() * cols)]
+        }while(p2[0] == p1[0] && p2[1] == p1[1])
+        do{
+            p3 = [parseInt(Math.random() * filas), parseInt(Math.random() * cols)]
+        }while(p3[0] == p2[0] && p3[1] == p2[1] || p3[0] == p1[0] && p3[1] == p1[1])
+        let output = ""
+        for(let i = 0; i < filas; i++){
+            output += `<tr>`
+            for(let j = 0; j < cols; j++){
+                if(i == p1[0] && j == p1[1]){
+                    output += `<td class="color">*</td>`
+                }else if(i == p2[0] && j == p2[1]){
+                    output += `<td class="color">*</td>`
+                }else if(i == p3[0] && j == p3[1]){
+                    output += `<td class="color">*</td>`
+                }else{
+                    output += `<td>-</td>`
+                }
+            }
+            output += `</tr>`
+        }
+        console.log(output)
+        tb.innerHTML = output
+    </script>
+</body>
+</html>

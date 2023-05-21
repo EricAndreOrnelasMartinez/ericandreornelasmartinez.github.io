@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#logo{
+    width: 50px;
+}
+@media (min-width: 1201px){
+    .menu{
+        display: flex;
+        padding: 5px
+    }
+}

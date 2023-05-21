@@ -1,0 +1,7 @@
+QUE SUCEDE SI LA SIGUIENTE LINEA: tr:nth-child(even){background-color: #f2f2f2}
+ES CAMBIADA POR: tr:nth-child(odd){background-color: #f2f2f2}
+*- Se modifica el orden de alteración de las filas de la tabla, ya sea las pares o las impares
+EN CUAL DE LOS DOS CODIGOS SE ESTÁ AGREGANDO ESTADOS?
+*-En el segundo, pues se agrega el evnto hover, el cual aplica cuando el ratón cubre algún elemento
+SI SE AGREGAN 3 TABLAS A CADA UNO DE LOS CODIGOS TODAS TIENEN EL MISMO FORMATO?
+*-Todas se quedan con el mismo formato que todo fue elaborado por etiquetas madre.

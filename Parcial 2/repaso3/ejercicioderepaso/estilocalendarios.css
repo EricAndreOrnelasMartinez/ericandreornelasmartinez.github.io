@@ -1,0 +1,70 @@
+body {
+  background-color: #95E1FF;
+  font-family: sans-serif;
+}
+
+div {
+  background-color: lightyellow;
+  border: black 1px solid;
+  padding: 10px 30px;
+  margin: 10px;
+  width: 50%;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.enero {
+  border-collapse: collapse;
+  border: none;
+  text-align: center;
+}
+
+.cabeceraenero {
+  width: 3em;
+  border-left: none;
+  border-right: none;
+}
+
+.filasenero {
+  width: 3em;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+.febrero {
+  border: none;
+  border-collapse: collapse;
+  text-align: right;
+}
+.cabecerafebrero {
+  border-top: none;
+  border-bottom: none;
+  padding-right: 5px;
+}
+.columnasfebrero {
+  border-top: none;
+  border-bottom: none;
+  font-size: 150%;
+  padding-right: 5px;
+  width: 1.5em;
+}
+
+.marzo {
+  border: black 1px solid;
+  border-collapse: collapse;
+  text-align: left;
+}
+.cabeceramarzo {
+  text-align: center;
+}
+.columnasmarzo {
+  width: 4em;
+  height: 4em;
+  padding-left: 5px;
+  font-size: 70%;
+  vertical-align: top;
+}

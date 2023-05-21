@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+    </script>
+    <title>Arreglos</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+</body>
+<script>
+        let arr1 = [];
+        let arr2 = [];
+        let c = parseInt(prompt("Digite la cantidad de datos a ingresar..."))
+        for(let i = 0; i < c; i++){
+            arr1[i] = parseInt(prompt("Digite un número: "))
+        }
+         for(let i = 0; i < c; i++){
+             arr2[i] = parseInt(prompt("Digite un número: "))
+        }
+    document.getElementById('demo1').innerHTML = arr1
+    document.getElementById('demo2').innerHTML = arr1.sort()
+    let max = Math.max.apply(null, arr1)
+    document.getElementById('demo3').innerHTML = max
+    let min = Math.min.apply(null, arr1)
+    document.getElementById('demo4').innerHTML = min
+    document.getElementById('demo5').innerHTML = arr1.length
+    document.getElementById('demo6').innerHTML = arr1.concat(arr2)
+</script>
+</html>

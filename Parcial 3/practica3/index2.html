@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H2>Conversor</H2>
+        <input type="text" name="text1" id="text1">
+        <button onclick="conversion()">Enviar</button>
+        <p id="res1"></p>
+    <script>
+        function conversion(){
+            let res = document.getElementById('res1')
+            let num = parseFloat(document.getElementById('text1').value)
+            res.innerHTML = "Pulgadas: " + num * 2.54
+        }
+    </script>
+</body>
+</html>
