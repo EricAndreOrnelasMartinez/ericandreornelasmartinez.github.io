@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen</title>
+    <script>
+        let n = parseInt(prompt("Digite la cantidad de datos"))
+    </script>
+</head>
+<body>
+    <button id="media">Media</button>
+    <button id="moda">Moda</button>
+    <button id="mediana">Mediana</button>
+    <button id="des">Desviación estandar</button>
+    <p id="res"></p>
+</body>
+<script>
+    let arr1 = []
+    let res = document.getElementById('res')
+    let media = document.getElementById('media')
+    let moda = document.getElementById('moda')
+    let mediana = document.getElementById('mediana')
+    let des = document.getElementById('des')
+    for(let i = 0; i < n; i++){
+        arr1.push(parseInt(Math.random() * 100))
+    }
+    console.log(arr1)
+    media.addEventListener("click", e =>{
+        e.preventDefault();
+        let sum = 0, prom
+        for(let i = 0; i < n; i++){
+            sum += arr1[i]
+        }
+        prom = sum/n
+        res.innerHTML += `La media es: ${prom}<br>`
+    })
+    moda.addEventListener("click", e =>{
+        e.preventDefault()
+        console.log(arr1.sort())
+        let aux = 0;
+        for(let i = 1; i <= n; i++){
+            if(arr1[i] == arr1[i -1]){
+                aux = arr1[i]
+            }
+        }
+        if(aux != 0){
+            res.innerHTML += `La moda es: ${aux}<br>`
+        }else{
+            res.innerHTML += `Ningún número se repite<br>`
+        }
+    })
+    mediana.addEventListener("click", e =>{
+        e.preventDefault()
+        arr1.sort()
+        let index1 = 0;
+        if(n % 2 == 0){
+            index1 = n/2
+        }else{
+            index1 = parseInt(n/2) + 1
+        }
+        res.innerHTML += `La mediana es: ${arr1[index1]} <br>`
+    })
+    des.addEventListener("click", e =>{
+        e.preventDefault()
+        let prom, sum = 0, desE = 0
+        for(let i = 0; i < n; i++){
+            sum += arr1[i]
+        }
+        prom = sum/n
+        for(let i = 0; i < n; i++){
+            desE += desviacionPorIndice(sum, prom, arr1[i], n)
+        }
+        res.innerHTML += `Desviación estandar: ${desE} <br>`
+
+    })
+    function desviacionPorIndice(suma, mediaP, indice, n){
+        return Math.sqrt((suma*Math.pow(indice - mediaP, 2))/n)
+    }
+</script>
+</html>
