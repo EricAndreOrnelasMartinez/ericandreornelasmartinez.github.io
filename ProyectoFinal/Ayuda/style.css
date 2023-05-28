@@ -1,0 +1,59 @@
+
+.cover{
+    background-image: url(../img/frcpreg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1%;
+}
+#aux{
+    width: 100%;
+    margin: 100%;
+}
+#title1{
+    text-align: center;
+    color: green;
+    font-size: 40px
+}
+.cover h2{
+    background-color: white;
+    text-align: center;
+    font-size: 50px;
+    color: green;
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+#preg{
+    width: 60%;
+    margin-left: 20%;
+}
+ul{
+    list-style: none ;
+}
+button{
+    width: 100%;
+    padding: 2%;
+}
+#resp{
+    width: 60%;
+    margin-left: 20%; 
+}
+#title2{
+    text-align: center;
+    color: rgb(255, 0, 0);
+    font-size: 35px
+}
+#res{
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+input{
+    padding: 2%;
+    color: white;
+    background-color: green;
+    font-size: 20px;
+}

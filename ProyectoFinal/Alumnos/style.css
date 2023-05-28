@@ -1,0 +1,60 @@
+.cover{
+    background-image: url(../img/estudiantes.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1%;
+}
+#aux{
+    width: 100%;
+    margin: 25%;
+}
+#title1{
+    text-align: center;
+    color: green;
+    font-size: 40px
+}
+#his {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#plan{
+    width: 60%;
+    margin-left: 20%;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #290a63;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+#plan ul{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    margin-left: 10%;
+}
+#plan ul ul{
+    list-style: square;
+    display: grid;
+    padding: 10%;
+    margin-left: 20%;
+}
+h2{
+    text-align: center;
+}

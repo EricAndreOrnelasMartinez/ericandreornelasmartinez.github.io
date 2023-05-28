@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    width: 50px;
+    mix-blend-mode: multiply;
+    border: 0.5px solid #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+nav{
+    width: 100%;
+    display: flex;
+    background-color: #25D109;
+    padding-bottom: 0.5%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+nav ul{
+    margin-top: 1%;
+    margin-left: 59%;
+    display: flex;
+    list-style: none;
+}
+nav li{
+    padding: 2%;
+    text-align: center;
+}
+#selected{
+    padding-bottom: 1%;
+    border-bottom: rgb(170, 169, 169) 4px solid;
+}
+nav li:hover{
+    border-bottom: rgb(170, 169, 169) 4px solid;
+}
+footer{
+    display: flex;
+    background-color: gray;
+}
+#contact{
+    margin-left: 20%;
+    margin-right: 30%;
+}
+#selected{
+    padding-bottom: 1%;
+    border-bottom: rgb(170, 169, 169) 4px solid;
+}
