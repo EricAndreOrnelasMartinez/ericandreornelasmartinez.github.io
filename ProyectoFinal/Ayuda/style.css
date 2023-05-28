@@ -33,6 +33,10 @@ ul{
 button{
     width: 100%;
     padding: 2%;
+    background-color: white;
+}
+button:hover{
+    background-color: green;
 }
 #resp{
     width: 60%;

@@ -22,3 +22,23 @@
     margin-top: 10%;
     margin-bottom: 10%;
 }
+#title1{
+    text-align: center;
+    color: green;
+    font-size: 40px
+}
+#n1{
+    width: 60%;
+    margin-left: 20%;
+}
+#subn1{
+    display: flex;
+}
+#subn1 ul{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2%;
+}
+#subn1 li{
+    margin: 3%;
+}
